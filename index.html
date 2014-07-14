@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+        <!-- Pull in my own CSS customisations -->
+	<link rel="stylesheet" href="css/styles.css">
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 	<!-- Respond.js for IE 8 or less only -->
@@ -33,19 +36,23 @@
 
         <!-- Start of added site or application content here -->
 
+        <!-- fluid container holding the entire header section -->
 	<header role="banner">
 	  <nav role="navigation" class="navbar navbar-static-top navbar-default">
-	    <div class="container">
+	    <div class="container-fluid">
 
+	      <!-- Brand and toggle get grouped for better mobile display, these do not collapse -->
 	      <div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="index.html">Site1 Brand</a>
-	      </div>
+		<a class="navbar-brand" href="index.html">Memoriser</a>
+	      </div><!-- /.navbar-header -->
 
+	      <!-- Collect the nav links, forms, and other content for toggling -->
 	      <div class="navbar-collapse collapse">
 		<ul class="nav navbar-nav">
 		  <li class="active"><a href="index.html">Home</a></li>
@@ -54,17 +61,60 @@
 		</ul>
 	      </div><!--/.nav-collapse -->
 
-	    </div>
+	    </div><!-- /.container-fluid -->
 	  </nav>
 	</header>
 
+        <!-- fluid container holding the entire main section -->
 	<main role="main">
-	  <h1>Main Heading</h1>
-	  <p>Content specific to this page goes here.</p>
+	  <div class="container-fluid">
+	    <div class="row">
+	      <div class="col-xs-12 text-center">
+		<p></p>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-xs-12 text-center">
+		<h3>Memorising birthdays.</h3>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-xs-8 col-xs-offset-2 text-center">
+		<img class="img-polaroid" src="http://placehold.it/240x150" id="face-image">
+	      </div>
+	    </div>
+
+	    <div class="row" id="meminfo">
+	      <div class="col-xs-4 col-xs-offset-2">
+		<p class="text-right">Name:</p>
+		<p class="text-right">Birthday:</p>
+	      </div>
+	      <div class="col-xs-4">
+		<p class="text-left" id="name">Jim Smith</p>
+		<p class="text-left">22/12/2014</p>
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-xs-8 col-xs-offset-2 text-center">
+		<button class="btn btn-sm btn-info" id="prev">Prev</button>
+		<button class="btn btn-sm btn-danger" id="next">Next</button>
+	      </div>
+	    </div>
+
+	  </div><!-- /.container-fluid -->
+
 	</main>
 
+        <!-- fluid container holding the entire footer section -->
 	<footer role="contentinfo">
-	  <p><small>Copyright &copy; Company Name</small></p>
+	  <div class="container-fluid">
+	    <div class="row">
+	      <p class="text-center"><small>Copyright &copy; Memoriser</small></p>
+	    </div>
+	  </div><!-- /.container-fluid -->
 	</footer>
 
 

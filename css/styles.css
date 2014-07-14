@@ -1,0 +1,22 @@
+/*
+ * Add custom CSS styles here, to over-ride those in Bootstrap and HTML5
+ * Boilerplate. 
+ */
+
+
+footer {
+    margin-top: 10px;
+}
+
+#face-image {
+    padding-bottom: 20px;
+}
+
+#meminfo {
+    padding-bottom: 20px;
+}
+
+
+
+
+
